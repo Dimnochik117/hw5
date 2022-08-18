@@ -38,9 +38,7 @@ ul {
 
 button {
     cursor: pointer;
-
 }
-
 
 /* Head */
 img {
@@ -128,7 +126,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 1px;
-    
+
 }
 
 .header-nav:hover .contact-icon,
@@ -144,7 +142,8 @@ img {
     font-size: 26px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--accent-color)
+    color: var(--accent-color);
+    transition: color var(--time-duration);
 }
 
 
@@ -170,7 +169,8 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    transition: color var(--time-duration);
 }
 
 
@@ -196,10 +196,12 @@ img {
 .current {
     color: var(--accent-color);
 }
-.header-link.current{
+
+.header-link.current {
     position: relative;
 }
-.header-link.current::after{
+
+.header-link.current::after {
     content: "";
     display: block;
     width: 100%;
@@ -259,6 +261,8 @@ img {
     border: 0px;
     border-radius: 4px;
 
+    transition: color var(--time-duration), background-color var(--time-duration);
+
 }
 
 .start-button:hover,
@@ -309,8 +313,6 @@ img {
 }
 
 .information-text {
-
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -331,11 +333,33 @@ img {
     display: flex;
     margin-top: 50px;
 }
-
+.work-item{
+    position: relative;
+}
 
 
 .work-list .work-item+.work-item {
     margin-left: 30px;
+}
+
+.work-overlay {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+
+    color: var(--normal-color);
+    background: rgba(47, 48, 58, 0.8);
+
+    position: absolute;
+    margin: 0 auto;
+    padding: 27px 0px;
+    bottom: 0;
 }
 
 .team-item {
@@ -415,11 +439,15 @@ img {
     height: 44px;
     background-color: transparent;
     border-radius: 50%;
+    transition: background-color var(--time-duration);
+    
 }
 
 .team-icon {
     fill: #AFB1B8;
+    transition: fill var(--time-duration);
 }
+
 
 .team-link-icon:hover,
 .team-link-icon:focus {
@@ -455,7 +483,9 @@ img {
     border-radius: 4px;
     border: 1px solid #AFB1B8;
     fill: #AFB1B8;
+    transition: fill var(--time-duration);
 }
+
 
 .client-item:hover .client-link,
 .client-link:focus {
@@ -501,6 +531,8 @@ img {
     background-color: #f5f4fa;
     border: 1px solid transparent;
     border-radius: 4px;
+    transition: background-color var(--time-duration);
+    
 
 
 
@@ -619,6 +651,7 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color)
+    
 }
 
 .fo-logo {
@@ -629,6 +662,7 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--normal-color)
+    
 }
 
 .fotter-adress {
@@ -641,11 +675,12 @@ img {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--normal-color)
+    color: var(--normal-color);
 }
 
 .fotter-nav .white {
     color: var(--normal-color);
+    transition: color var(--time-duration);
 }
 
 .fotter-nav {
@@ -656,6 +691,7 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: color var(--time-duration);
 }
 
 .fotter-nav li+li {
@@ -675,9 +711,6 @@ img {
 }
 
 .dopinfo-text {
-
-
-
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -686,6 +719,7 @@ img {
     text-transform: uppercase;
 
     color: var(--normal-color);
+    
 
     margin: 0% auto;
 
@@ -700,6 +734,8 @@ img {
 
 .dopinfo-icon {
     fill: var(--normal-color);
+    transition: fill var(--time-duration);
+    
 }
 
 .dopinfo-link {
@@ -709,7 +745,7 @@ img {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
-    ;
+    transition: background-color var(--time-duration);
     border-radius: 50%;
 }
 
