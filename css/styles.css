@@ -110,7 +110,7 @@ img {
 }
 
 .contact-icon {
-    fill: #757575;
+    fill: #757575;r
     margin-right: 10px;
 }
 
@@ -126,7 +126,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 1px;
-
+    transition: color var(--time-duration), fill var(--time-duration);
 }
 
 .header-nav:hover .contact-icon,
@@ -428,7 +428,7 @@ img {
 .team-item-icon {
     display: flex;
     justify-content: center;
-    gap: 22px;
+    gap: 10px;
 }
 
 .team-link-icon {
@@ -531,11 +531,8 @@ img {
     background-color: #f5f4fa;
     border: 1px solid transparent;
     border-radius: 4px;
-    transition: background-color var(--time-duration);
+    transition: background-color var(--time-duration),box-shadow var(--time-duration), color var(--time-duration)
     
-
-
-
 }
 
 .portfolio-button:hover,
@@ -589,10 +586,6 @@ img {
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 56px;
-}
-
-.main-link {
-    width: calc((100%-60px)/3);
 }
 
 .main-item:hover,
