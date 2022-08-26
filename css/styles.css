@@ -112,6 +112,7 @@ img {
 .contact-icon {
     fill: #757575;
     margin-right: 10px;
+    transition: fill: var(--time-duration);
 }
 
 .header-nav {
